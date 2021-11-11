@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                git 'https://github.com/gmuni/game-of-life.git'        
+                git 'https://github.com/gmuni/spring-petclinic.git'        
             }
         }
       stage('build') {
         steps {
-           sh script: 'mvn clean compile'
+           sh script: 'mvn clean package'
         }
      }
     }
