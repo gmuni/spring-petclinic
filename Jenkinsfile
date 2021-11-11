@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'master'}
+    agent {label 'node1'}
     triggers {
         cron('H * * * 1-5')
     }
