@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                git 'https://github.com/wakaleo/game-of-life.git'        
+                git 'https://github.com/spring-projects/spring-petclinic'        
             }
         }
       stage('build') {
