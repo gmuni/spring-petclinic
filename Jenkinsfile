@@ -9,5 +9,10 @@ pipeline {
                 git 'https://github.com/gmuni/spring-petclinic.git'        
             }
         }
+      stage('build') {
+        steps {
+           sh script: 'mvn clean package'
+        }
+     }
     }
 }
